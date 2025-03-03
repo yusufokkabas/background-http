@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { backgroundHttpPlugin } from './definitions';
+import type { BackgroundHttpPlugin } from './definitions';
 
-const backgroundHttp = registerPlugin<backgroundHttpPlugin>('backgroundHttp', {
-  web: () => import('./web').then((m) => new m.backgroundHttpWeb()),
+const BackgroundHttp = registerPlugin<BackgroundHttpPlugin>('BackgroundHttp', {
+  web: () => import('./web').then((m) => new m.BackgroundHttpWeb()),
 });
 
 export * from './definitions';
-export { backgroundHttp };
+export { BackgroundHttp };

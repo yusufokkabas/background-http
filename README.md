@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`sendLocationUpdate(...)`](#sendlocationupdate)
 
 </docgen-index>
 
@@ -31,6 +32,24 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### sendLocationUpdate(...)
+
+```typescript
+sendLocationUpdate(options: { url: string; token: string; username: string; latitude: number; longitude: number; timestamp: number; }) => Promise<{ success: boolean; message: string; }>
+```
+
+Sends a location update to the server using native HTTP implementation
+that works reliably in the background
+
+| Param         | Type                                                                                                                   | Description                       |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| **`options`** | <code>{ url: string; token: string; username: string; latitude: number; longitude: number; timestamp: number; }</code> | The location data and API details |
+
+**Returns:** <code>Promise&lt;{ success: boolean; message: string; }&gt;</code>
 
 --------------------
 
