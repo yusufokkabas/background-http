@@ -1,6 +1,10 @@
 # background-http
 
-allows you to issue background http requests
+Allows you to use of the Native Http framework.
+
+IMPORTANT NOTE: This plugin is a tool I wrote for testing purposes and used to solve a specific problem. You can do everything this library offers and more with the capacitor official native http plugin. I keep it here for my own reference and as an example for the community.
+
+See: https://capacitorjs.com/docs/apis/http
 
 ## Install
 
